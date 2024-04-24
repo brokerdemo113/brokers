@@ -1,0 +1,66 @@
+/* .sm-btn{
+    color: #91969c;
+} */
+.login{
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    background-color: #f7f7f8;
+    border-radius: 10px;
+}
+.header h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.account h4{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.input input{
+    padding: 12px;
+    background-color: #dfe1eb;
+    width: 94%;
+    border: none;
+    border-radius: 5px;
+}
+.submit{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center !important;
+}
+.submit input{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    background-color: #d9dadc;
+    border-radius: 5px;
+}
+.submit input:hover{
+    transition: 0.3s;
+    background-color: #fadc19;
+}
+.forgot{
+    margin-top: 30px;
+}
+.forgot p{
+    text-align: center;
+    cursor: pointer !important;
+}
+.pass-register{
+    margin-top: 20px;
+}
+.line{
+    background-color: #87878a;
+    height: 2px;
+
+}
+.para{
+
+
+    margin: 20px 0 20px 0;
+}
