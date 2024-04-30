@@ -16,6 +16,6 @@
         </style>
     </head>
     <body class="antialiased">
-       <h1>demo</h1>
+       <h1>demo project</h1>
     </body>
 </html>
