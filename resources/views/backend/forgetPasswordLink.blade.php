@@ -4,8 +4,9 @@
 
 @section('content')
 
- <form action="{{route('admin.login.post')}}" method="post">
+ <form action="{{ route('reset.password.post') }}" method="post">
     @csrf
+    <input type="hidden" name="token" value="{{ $token }}">
     <div class="container main" style="width: 800px;">
         <div></div>
 
@@ -35,12 +36,16 @@
             @error('password')
             <div style="color:red">{{ $message }}</div>
             @enderror
+            <div class="input">
+                <input type="password" placeholder="Confirm Password" name="password_confirmation"  class=" @error('password') is-invalid @enderror">
+            </div>
+            @error('password_confirmation')
+            <div style="color:red">{{ $message }}</div>
+            @enderror
             <div class="submit">
-                <input type="submit" value="Login" name="submit" id="submit">
+                <input type="submit" value="Reset" name="submit" id="submit">
             </div>
-            <div class="forgot text-center mt-5 ">
-               <a href="{{route('forgotPassword')}}"> <p>Forgot Password</p> </a>
-            </div>
+
         </div>
     </div>
  </form>

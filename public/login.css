@@ -14,7 +14,7 @@
 }
 .account h4{
     margin-top: 20px;
-    color:#a6c626;
+    color:#fd5a22;
     text-align: center;
     font-size: 19px;
 }
@@ -47,12 +47,21 @@
 .forgot{
     margin-top: 30px;
 }
-.forgot:hover{
-    color: #fd5a22;
-}
+
 .forgot p{
     text-align: center;
     cursor: pointer !important;
+    color: #a6c626;
+}
+.forgot a{
+
+    text-decoration: none;
+
+}
+a:hover{
+
+    color: #fd5a22;
+
 }
 .pass-register{
     margin-top: 20px;
