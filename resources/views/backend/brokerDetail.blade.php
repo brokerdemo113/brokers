@@ -13,7 +13,7 @@
                </div>
                <div class="card-body">
                   @include('flash-message')
-                  <form action="{{route('broker.details.post')}}" method="post">
+                  <form action="{{route('broker.details.post')}}" method="post" enctype="multipart/form-data">
                      @csrf
                      <div class="container">
                         <div class="row">

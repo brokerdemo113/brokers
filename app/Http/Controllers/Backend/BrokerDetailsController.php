@@ -18,7 +18,7 @@ class BrokerDetailsController extends Controller
         // dd('post');
         $validatedData = $request->validate([
             'name' => 'required',
-            'image' => 'required',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
             'email' => 'required',
             'website' => 'required',
             'phone' => 'required',
@@ -32,9 +32,15 @@ class BrokerDetailsController extends Controller
             'youtube_link' => 'required',
             'linkedin_link' => 'required',
         ]);
+        $image = $request->file('image');
+        $imageName = time().'.'.$image->extension();
+        $image->move(public_path('images'), $imageName);
+
+        $imagePath = 'images/' . $imageName;
+
         $brokerDetails = new Brokerdetails();
          $brokerDetails->name = $validatedData['name'];
-         $brokerDetails->image = $validatedData['image'];
+         $brokerDetails->image = $imageName;
          $brokerDetails->email = $validatedData['email'];
          $brokerDetails->website = $validatedData['website'];
          $brokerDetails->phone = $validatedData['phone'];
