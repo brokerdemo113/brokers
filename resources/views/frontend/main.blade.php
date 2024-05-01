@@ -3,5 +3,5 @@
 @section('title', 'Brokers')
 
 @section('content')
-    <h1 style="color: #000;margin-top: 200px;">content</h1>
+    <h1 style="color: #000;margin-top: 200px;">data</h1>
 @endsection
