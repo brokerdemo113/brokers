@@ -17,6 +17,7 @@
          href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
          rel="stylesheet"
          />
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <!-- Icons. Uncomment required icon fonts -->
       <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
       <!-- Core CSS -->
@@ -66,15 +67,15 @@
                      <ul class="menu-sub">
                         <li class="menu-item">
                            <a href="{{route('broker.details')}}" class="menu-link">
-                              <div data-i18n="Without menu">Add Brokers</div>
+                              <div data-i18n="Without menu">Add Brokers Details</div>
                            </a>
                         </li>
-                        {{-- <li class="menu-item">
-                           <a href="layouts-without-navbar.html" class="menu-link">
-                              <div data-i18n="Without navbar">Without navbar</div>
+                       {{-- <li class="menu-item">
+                           <a href="{{route('Licenses.Detail')}}" class="menu-link">
+                              <div data-i18n="Without navbar">Licenses</div>
                            </a>
-                        </li>
-                        <li class="menu-item">
+                        </li> --}}
+                        {{--  <li class="menu-item">
                            <a href="layouts-container.html" class="menu-link">
                               <div data-i18n="Container">Container</div>
                            </a>
@@ -91,32 +92,32 @@
                         </li> --}}
                      </ul>
                   </li>
-                  {{-- <li class="menu-header small text-uppercase">
+                  <li class="menu-header small text-uppercase">
                      <span class="menu-header-text">Pages</span>
                   </li>
                   <li class="menu-item">
                      <a href="javascript:void(0);" class="menu-link menu-toggle">
                         <i class="menu-icon tf-icons bx bx-dock-top"></i>
-                        <div data-i18n="Account Settings">Account Settings</div>
+                        <div data-i18n="Account Settings">Licenses</div>
                      </a>
                      <ul class="menu-sub">
                         <li class="menu-item">
-                           <a href="pages-account-settings-account.html" class="menu-link">
-                              <div data-i18n="Account">Account</div>
+                           <a href="{{route('Add.License')}}" class="menu-link">
+                              <div data-i18n="Account">Add Licenses</div>
                            </a>
                         </li>
                         <li class="menu-item">
-                           <a href="pages-account-settings-notifications.html" class="menu-link">
-                              <div data-i18n="Notifications">Notifications</div>
+                           <a href="{{route('Licenses.Detail')}}" class="menu-link">
+                              <div data-i18n="Notifications">Add Licenses Details</div>
                            </a>
                         </li>
-                        <li class="menu-item">
+                        {{-- <li class="menu-item">
                            <a href="pages-account-settings-connections.html" class="menu-link">
                               <div data-i18n="Connections">Connections</div>
                            </a>
-                        </li>
+                        </li> --}}
                      </ul>
-                  </li> --}}
+                  </li>
 
 
                </ul>

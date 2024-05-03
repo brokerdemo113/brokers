@@ -9,9 +9,12 @@ class Brokerdetails extends Model
 {
     use HasFactory;
     protected $fillable = [
+
         'name',
-        'phone','address',
-        'image','company_abb',
+        'phone',
+        'address',
+        'image',
+        'company_abb',
         'platform_reg',
         'year',
         'email',
@@ -20,7 +23,7 @@ class Brokerdetails extends Model
         'instagram_link',
         'youtube_link',
         'linkedin_link',
-        'twitter_link'
+        'twitter_link',
+        ];
 
-    ];
 }

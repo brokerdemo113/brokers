@@ -68,15 +68,15 @@
                               <div class="">
                                  <label class="form-label" for="basic-icon-default-email">Company Website</label>
                                  <div class="input-group input-group-merge">
-                                    <span class="input-group-text"><i class="bx bx-envelope"></i></span>
+                                    <span class="input-group-text"><i class="fa-solid fa-earth-americas"></i></span>
                                     <input
-                                       type="email"
+                                       type="text"
                                        name="website"
                                        id="basic-icon-default-email"
                                        class="form-control @error('website') is-invalid @enderror"
-                                       placeholder="john.doe"
+                                       placeholder="www.website.com"
                                        />
-                                    <span id="basic-icon-default-email2" class="input-group-text">@example.com</span>
+
                                  </div>
 
                               </div>
@@ -102,11 +102,25 @@
                               <div  style="color:red">{{ $message }}</div>
                               @enderror
                               <div class="">
-                                 <label class="form-label" for="basic-icon-default-phone">Year</label>
-                                 <div>
+                                <label class="form-label" for="basic-icon-default-phone">Year</label>
+                                <div class="input-group input-group-merge">
+                                   <span id="basic-icon-default-phone2" class="input-group-text"
+                                      ><i class="fa-regular fa-calendar"></i></span>
+                                   <input
+                                      type="year"
+                                      name="year"
+                                      id="basic-icon-default-phone"
+                                      class="form-control phone-mask @error('year') is-invalid @enderror"
+                                      placeholder="2024"
+                                      />
+                                </div>
+                             </div>
+                              {{-- <div class="">
+                               <label class="form-label" for="basic-icon-default-phone">Year</label>
+
                                     <input class="form-control @error('year') is-invalid @enderror" name="year" type="year" value="2021-06" id="html5-month-input" />
-                                 </div>
-                              </div>
+
+                              </div> --}}
                               @error('year')
                               <div  style="color:red">{{ $message }}</div>
                               @enderror
@@ -114,8 +128,7 @@
                                  <label class="form-label" for="basic-icon-default-fullname">Platform registered country and region</label>
                                  <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-fullname2" class="input-group-text"
-                                       ><i class="bx bx-user"></i
-                                       ></span>
+                                       ><i class="fa-regular fa-registered"></i></span>
                                     <input
                                        type="text"
                                        name="platform_reg"
@@ -134,8 +147,7 @@
                                  <label class="form-label" for="basic-icon-default-fullname">Company Abbreviation</label>
                                  <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-fullname2" class="input-group-text"
-                                       ><i class="bx bx-user"></i
-                                       ></span>
+                                       ><i class="fa-solid fa-earth-americas"></i></span>
                                     <input
                                        type="text"
                                        name="company_abb"
@@ -152,8 +164,7 @@
                                  <label class="form-label" for="basic-icon-default-message">Address</label>
                                  <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-message2" class="input-group-text"
-                                       ><i class="bx bx-comment"></i
-                                       ></span>
+                                       ><i class="fa-solid fa-location-dot"></i></span>
                                     <textarea
                                        id="basic-icon-default-message"
                                        name="address"
@@ -169,8 +180,7 @@
                                  <label class="form-label" for="basic-icon-default-fullname">Facebook Link</label>
                                  <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-fullname2" class="input-group-text"
-                                       ><i class="bx bx-user"></i
-                                       ></span>
+                                       ><i class="fa-brands fa-facebook"></i></span>
                                     <input
                                        type="text"
                                        name="facebook_link"
@@ -187,8 +197,7 @@
                                  <label class="form-label" for="basic-icon-default-fullname">Instagram Link</label>
                                  <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-fullname2" class="input-group-text"
-                                       ><i class="bx bx-user"></i
-                                       ></span>
+                                       ><i class="fa-brands fa-instagram"></i></span>
                                     <input
                                        type="text"
                                        name="instagram_link"
@@ -205,8 +214,7 @@
                                  <label class="form-label" for="basic-icon-default-fullname">Twitter Link</label>
                                  <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-fullname2" class="input-group-text"
-                                       ><i class="bx bx-user"></i
-                                       ></span>
+                                       ><i class="fa-brands fa-x-twitter"></i></span>
                                     <input
                                        type="text"
                                        name="twitter_link"
@@ -223,8 +231,7 @@
                                  <label class="form-label" for="basic-icon-default-fullname">YouTube Link</label>
                                  <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-fullname2" class="input-group-text"
-                                       ><i class="bx bx-user"></i
-                                       ></span>
+                                       ><i class="fa-brands fa-youtube"></i></span>
                                     <input
                                        type="text"
                                        name="youtube_link"
@@ -241,8 +248,7 @@
                                  <label class="form-label" for="basic-icon-default-fullname">LinkedIn Link</label>
                                  <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-fullname2" class="input-group-text"
-                                       ><i class="bx bx-user"></i
-                                       ></span>
+                                       ><i class="fa-brands fa-linkedin"></i></span>
                                     <input
                                        type="text"
                                        name="linkedin_link"

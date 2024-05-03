@@ -6,6 +6,7 @@ use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\ForgotPasswordController;
 use App\Http\Controllers\Backend\ProfileController;
 use App\Http\Controllers\Backend\BrokerDetailsController;
+use App\Http\Controllers\Backend\LicensesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,5 +41,9 @@ Route::post('reset-password', [ForgotPasswordController::class, 'submitResetPass
     Route::get('profile',[ProfileController::class,'Profile'])->name('dashbard.profile');
     Route::get('brokerdetails',[BrokerDetailsController::class,'BrokerDetails'])->name('broker.details');
     Route::post('brokerdetailspost',[BrokerDetailsController::class,'BrokerDetailsPost'])->name('broker.details.post');
+    Route::get('LicensesDetail',[LicensesController ::class,'LicensesDetail'])->name('Licenses.Detail');
+    Route::get('AddLicenses',[LicensesController ::class,'AddLicense'])->name('Add.License');
+    Route::post('PostLicenses',[LicensesController ::class,'PostLicense'])->name('Post.License');
+    Route::post('PostLicensesDetail',[LicensesController ::class,'PostLicensesDetail'])->name('Post.Licenses.Detail');
  });
 
